@@ -401,7 +401,7 @@ void test_random_modular() {
         precn_t divisor = precn_new(divisor_size + 1);
         precn_t mod_result = precn_new(divisor_size + 1);
         precn_t quotient = precn_new(dividend_size + 1);
-        precn_t verification = precn_new(dividend_size + 2);
+        precn_t verification = precn_new(dividend_size + divisor_size + 2);
         
         // Fill with random data
         for (int i = 0; i < dividend_size; i++) {

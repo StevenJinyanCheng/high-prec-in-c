@@ -283,7 +283,7 @@ void precn_shl(precn_t res, const precn_t a, int n) {
     res->siz = new_size;
     precn_normalize(res);
 }
-
+/*
 // Right shift by n bits: res = a >> n
 void precn_shr(precn_t res, const precn_t a, int n) {
     if (n == 0) {
@@ -323,7 +323,7 @@ void precn_shr(precn_t res, const precn_t a, int n) {
     res->siz = new_size;
     precn_normalize(res);
 }
-
+*/
 // Print as hex (for debugging)
 void precn_print_hex(const precn_t n) {
     if (n->siz == 0) {
